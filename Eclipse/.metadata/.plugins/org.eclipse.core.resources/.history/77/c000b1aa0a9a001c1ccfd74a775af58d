@@ -1,0 +1,12 @@
+package negyedikteszt;
+import negyedik.alkalmazott;
+public class alkalmazottTeszt {
+
+	public static void main(String[] args) {
+		alkalmazott a;
+		a.setName("Tom");
+		
+
+	}
+
+}

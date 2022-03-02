@@ -1,0 +1,6 @@
+package negyedik;
+public class alkalmazott {
+	String name;
+	int sallary = 250000;
+
+}

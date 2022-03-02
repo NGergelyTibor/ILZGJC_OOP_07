@@ -1,0 +1,6 @@
+
+public class alkalmozott {
+	String name;
+	int sallary = 250000;
+
+}

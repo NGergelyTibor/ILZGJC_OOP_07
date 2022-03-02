@@ -1,0 +1,8 @@
+package negyedik;
+public class alkalmazott {
+	private String name;
+	private int sallary = 250000;
+	public String getName() {
+		return name;
+	}
+}

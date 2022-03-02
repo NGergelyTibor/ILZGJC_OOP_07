@@ -1,0 +1,48 @@
+package negyedik;
+public class alkalmazott {
+	private String name;
+	private int salary;
+	public alkalmazott(String name, int sallary) {
+		super();
+		this.name = name;
+		this.salary = sallary;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSallary() {
+		return salary;
+	}
+	public alkalmazott(String name) {
+		this(name, 250000);
+	}
+	public alkalmazott() {
+		this("Tom");
+	}
+	@Override
+	public String toString() {
+		return "alkalmazott [name=" + name + ", sallary=" + salary + "]";
+	}
+	public void increaseSalary(int plus) {
+		this.salary += plus;
+	}
+	public void setSallary(int sallary) {
+		this.salary = sallary;
+	}
+	public boolean isGreaterThan(int limit) {
+		if (salary > limit) {
+			return true;
+		}return false;
+	}
+	public double calculateTax(double taxrate) {
+		return salary * taxrate / 100;
+	}
+	public boolean hasGreaterSalary(alkalmazott other) {
+		if (this.salary > other.salary) {
+			return true;
+		}return false;
+	}
+}

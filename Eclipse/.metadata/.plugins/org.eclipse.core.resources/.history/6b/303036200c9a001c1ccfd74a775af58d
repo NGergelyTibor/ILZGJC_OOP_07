@@ -1,0 +1,17 @@
+package negyedik;
+public class alkalmazott {
+	private String name;
+	private int sallary = 250000;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSallary() {
+		return sallary;
+	}
+	public void setSallary(int sallary) {
+		this.sallary = sallary;
+	}
+}

@@ -1,0 +1,34 @@
+package negyedikteszt;
+import java.util.Scanner;
+
+import negyedik.alkalmazott;
+public class alkalmazottTeszt {
+
+	public static void main(String[] args) {
+		alkalmazott a = new alkalmazott();
+		a.setName("Tom");
+		System.out.println(a);
+		a.increaseSalary(50000);
+		System.out.println(a);
+		alkalmazott a2 = new alkalmazott("John");
+		System.out.println(a2);
+		a2.increaseSalary(30000);
+		System.out.println(a2.isGreaterThan(40000));
+		System.out.println(a2.calculateTax(12));
+		System.out.println(a2.hasGreaterSalary(a));
+		System.out.println(alkalmazott.compareSalary(a, a2));
+		Scanner input = new Scanner(System.in)
+		alkalmazott[] myArray = new alkalmazott[5];
+		for(int i = 0; i < myArray.length; i++) {
+			System.out.println("Name :");
+			String name = input.nextLine();
+			myArray[i] = new alkalmazott(name);
+			myArray[i].increaseSalary(i * 50000);
+			
+		}
+		
+		
+
+	}
+
+}

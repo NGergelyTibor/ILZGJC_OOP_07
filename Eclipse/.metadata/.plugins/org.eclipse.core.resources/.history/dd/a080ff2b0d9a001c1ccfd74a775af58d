@@ -1,0 +1,27 @@
+package negyedik;
+public class alkalmazott {
+	public alkalmazott(String name) {
+		this.name = name;
+	}
+	private String name;
+	private int sallary = 250000;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSallary() {
+		return sallary;
+	}
+	@Override
+	public String toString() {
+		return "alkalmazott [name=" + name + ", sallary=" + sallary + "]";
+	}
+	public void increaseSalary(int plus) {
+		this.sallary += plus;
+	}
+	public void setSallary(int sallary) {
+		this.sallary = sallary;
+	}
+}

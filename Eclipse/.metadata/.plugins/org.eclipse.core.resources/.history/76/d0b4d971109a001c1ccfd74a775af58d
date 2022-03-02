@@ -1,0 +1,22 @@
+package negyedikteszt;
+import negyedik.alkalmazott;
+public class alkalmazottTeszt {
+
+	public static void main(String[] args) {
+		alkalmazott a = new alkalmazott();
+		a.setName("Tom");
+		System.out.println(a);
+		a.increaseSalary(50000);
+		System.out.println(a);
+		alkalmazott a2 = new alkalmazott("John");
+		System.out.println(a2);
+		a2.increaseSalary(30000);
+		System.out.println(a2.isGreaterThan(40000));
+		System.out.println(a2.calculateTax(12));
+		System.out.println(a2.hasGreaterSalary(a));
+		
+		
+
+	}
+
+}
