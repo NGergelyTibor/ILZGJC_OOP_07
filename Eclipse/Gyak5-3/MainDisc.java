@@ -3,28 +3,28 @@ public class MainDisc {
     static Input input = new Input();
     public static void main(String[] args) {
         
-        System.out.println("Please give me how many discs do you want to work with!");
+        System.out.println("Please enter the number of disc!");
         int size = input.readInteger();
         Disc[] discArray = new Disc[size];
         readIntoDiscArray(discArray);
         
-        System.out.println("Now let's see the details of the discs!");
+        System.out.println("Deatils of the discs.");
         printDiscArray(discArray);
 
-        System.out.println("\nNow give a parameter disc!");
+        System.out.println("\nGive me a disc as a parameter.");
         Disc parameter = readDisc();
         System.out.println();
         biggerSmallerEquals(discArray, parameter);
 
-        System.out.println("\nNow read a new parameter disc!");
-        System.out.println("The program will find you the same name's performer as the parameter is.");
+        System.out.println("\nReading parameter discs info.");
+        System.out.println("Performer search.");
         Disc performerParamteter = readDisc();
         findSamePerformer(discArray, performerParamteter);
 
-        System.out.println("\nThe program will list you the details of the maximum length's performer:");
+        System.out.println("\nDeatails of maxmimum");
         printMaxLengthDetails(discArray);
 
-        System.out.println("\nPlease enter a performer's name which is in the sequence!");
+        System.out.println("\nSearch through performers.");
         String parameterPerformer = input.readStringWithBufferCleaner();
         printPerformersDetails(discArray, parameterPerformer);
     }
